@@ -1,7 +1,6 @@
 
 public class CpuTicPlayer extends ATicPlayer
 {
-
     public char getSymbol(){ //Returns the symbol that represents this player
         return 'O';
     }

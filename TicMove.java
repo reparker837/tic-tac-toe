@@ -1,10 +1,3 @@
-
-/**
- * Write a description of class TicMove here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
 public class TicMove
 {
     int col; //the move's column
