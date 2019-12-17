@@ -24,7 +24,7 @@ public class HumanTicPlayer extends ATicPlayer
             length = s.length();
             s = s.toUpperCase();
             System.out.println(s);
-            
+
             if(s.equals("QUIT")){ //fix this
                 System.out.println("You played " + game.gamesPlayed + " game(s).");
                 System.out.println("Games won: " + game.humanWins);

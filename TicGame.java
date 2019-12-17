@@ -1,17 +1,12 @@
 import java.util.Scanner;
-/**
- * Write a description of class TicGame here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
+
 public class TicGame
 {
     protected char BLANK; //represents an empty spot on the game board
     protected char[][] board; //represents the game board as matrix of player symbols
     protected int boardSize; //represents board size, which will be a boardSize x boardSize matrix
     protected char gameResult; //game result, '?' means game not over yet
-    //'T' means tie, and any other character 'C' means the player represented 
+    //'T' means tie, and any other character 'C' means the player represented
     //by said character 'C' won the game
     int gamesPlayed = 0;
     int humanWins;
@@ -153,7 +148,7 @@ public class TicGame
             }
 
         }
-        return false; 
+        return false;
     }
 
     public boolean isValidMove(TicMove move){ //Validates a potential move
@@ -172,13 +167,13 @@ public class TicGame
                 board[j][k] = BLANK;
             }
         }
-        
+
         System.out.println("New game:");
         System.out.println(game);
         gameResult = '?';
     }
 
-    public String toString(){ 
+    public String toString(){
         String sboard = "";
         String[] alphabet = {"A", "B", "C", "D", "E", "F", "G", "H", "I"};
         for(int r = 0; r<boardSize; r++){
@@ -209,7 +204,7 @@ public class TicGame
                 sboard += "";
             }
             else{
-                sboard += " ";            
+                sboard += " ";
                 for(int i = 0; i<boardSize; i++){
                     if(i == boardSize-1){
                         sboard += "---";
@@ -222,7 +217,7 @@ public class TicGame
             }
         }
         return sboard;
-    } 
+    }
 
     public static void main(String[] args){
         //Runs a single-player, text-based game of Tic-tac-toe
@@ -230,7 +225,7 @@ public class TicGame
 
         int i = 3;
         try{
-            i = Integer.parseInt(args[0]); 
+            i = Integer.parseInt(args[0]);
         } catch(ArrayIndexOutOfBoundsException e){
             System.out.println("Board size not valid.");
 
@@ -240,12 +235,12 @@ public class TicGame
         }
         if (!(i >= 1 &&  i <= 9)){
             System.out.println("Board size not valid.");
-            i = 3;            
+            i = 3;
         }
         int boardSize = i;
 
         TicGame game = new TicGame(boardSize); //creates game
-        
+
         game.board = new char[boardSize][boardSize];
         game.BLANK = ' ';
         for(int j = 0; j<boardSize; j++){
@@ -258,7 +253,7 @@ public class TicGame
         System.out.println(game);
         boolean over = false;
         do{
-            int m = (int) (Math.random()*2); 
+            int m = (int) (Math.random()*2);
             do{
                 HumanTicPlayer human = new HumanTicPlayer();
                 CpuTicPlayer cpu = new CpuTicPlayer();
@@ -333,7 +328,7 @@ public class TicGame
                         char x = game.getGameResult();
                         game.resetGame(game);
                     }
-                    m = 0; 
+                    m = 0;
                 }
             } while (over == false);
             game.gamesPlayed++;
