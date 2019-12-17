@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=TicGame
+comment0.text=\n\ Write\ a\ description\ of\ class\ TicGame\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=boardSize
+comment1.target=TicGame(int)
+comment2.params=move\ symbol
+comment2.target=boolean\ executeMove(TicMove,\ char)
+comment3.params=
+comment3.target=int\ getBoardSize()
+comment4.params=
+comment4.target=char\ getGameResult()
+comment5.params=
+comment5.target=boolean\ isGameOver()
+comment6.params=move
+comment6.target=boolean\ isValidMove(TicMove)
+comment7.params=game
+comment7.target=void\ resetGame(TicGame)
+comment8.params=
+comment8.target=java.lang.String\ toString()
+comment9.params=args
+comment9.target=void\ main(java.lang.String[])
+numComments=10

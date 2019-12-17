@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=CpuTicPlayer
+comment1.params=
+comment1.target=char\ getSymbol()
+comment2.params=game
+comment2.target=TicMove\ pickMove(TicGame)
+numComments=3

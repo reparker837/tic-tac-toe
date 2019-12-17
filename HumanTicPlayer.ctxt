@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=HumanTicPlayer
+comment0.text=\n\ Write\ a\ description\ of\ class\ HumanTicPlayer\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=char\ getSymbol()
+comment2.params=game
+comment2.target=TicMove\ pickMove(TicGame)
+numComments=3
